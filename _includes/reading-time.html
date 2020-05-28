@@ -1,0 +1,6 @@
+{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+Este artigo leva {{ words | plus: 150 | divided_by: 150 }} {% if time == '1' %}minuto{% else %}minutos{% endif %} para ler.
+{% endunless %}

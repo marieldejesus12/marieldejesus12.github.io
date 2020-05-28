@@ -1,0 +1,11 @@
+- title: Home
+  url: /
+  external: false
+
+- title: Tags
+  url: /tags/
+  external: false
+
+- title: Quem sou?
+  url: /about/
+  external: false
