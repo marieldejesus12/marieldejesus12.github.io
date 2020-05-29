@@ -19,8 +19,14 @@ O [OpenWrt](https://www.openwrt.org/){:target="blank"} é um sistema operacional
 Para instalar o WireGuard no OpenWrt vamos utilizar o pacote `luci-i18n-wireguard-pt-br` que já instala todas a dependências necessárias, incluindo o próprio pacote `wireguard-tools` e o `luci-proto-wireguard` (necessário para a configuração gráfica na Luci).
 
 <figure>
-  <a href="https://i.imgur.com/GpO7Q4J.png">
-    <img src="https://i.imgur.com/GpO7Q4J.png" alt="Pacotes instalados WireGuard">
+  <a href="GpO7Q4J.png">
+    <img src="GpO7Q4J.png" alt="Pacotes instalados WireGuard">
+  </a>
+  <figcaption>Pacotes a serem instalados.</figcaption>
+</figure>
+<figure>
+  <a href="GpO7Q4J.png">
+    <img src="GpO7Q4J.png" alt="Pacotes instalados WireGuard">
   </a>
   <figcaption>Pacotes a serem instalados.</figcaption>
 </figure>
@@ -54,8 +60,8 @@ Para cada cliente a se conectar gere um par da chaves trocando o número `1` por
 Agora vamos configurar a interface para que o WireGuard seja executado. Vá em `Redes >> Interfaces` (presumindo que você está com sua interface Luci já em português) e clique em `Adicionar uma nova interface`, nomeie a interface,  selecione o protocolo `VPN WireGuard` e clique em `Criar interface`.
 
 <figure>
-  <a href="https://i.imgur.com/RpPiv26.png">
-    <img src="https://i.imgur.com/RpPiv26.png" alt="Adicionar interfaces">
+  <a href="RpPiv26.png">
+    <img src="RpPiv26.png" alt="Adicionar interfaces">
   </a>
   <figcaption>Adicionar interface.</figcaption>
 </figure>
@@ -63,8 +69,8 @@ Agora vamos configurar a interface para que o WireGuard seja executado. Vá em `
 Na tela a seguir, coloque a chave privada so servidor (serv-privatekey.txt) no campo correspondente, escolha uma porta para o serviço rodar (ao que parece, na documentação, por padrão o WireGuard utilizaria a porta `51820`) e atribua um endereço de IP com `/24` para ser o endereço da interface a criada:
 
 <figure>
-  <a href="https://i.imgur.com/g3T6MCS.png">
-    <img src="https://i.imgur.com/g3T6MCS.png" alt="Criando a interface">
+  <a href="g3T6MCS.png">
+    <img src="g3T6MCS.png" alt="Criando a interface">
   </a>
   <figcaption>Criando a interface.</figcaption>
 </figure>
@@ -72,8 +78,8 @@ Na tela a seguir, coloque a chave privada so servidor (serv-privatekey.txt) no c
 Vá na aba de `Configurações do Firewall` e atribua uma zona de Firewall para a interface. Eu normalmente gosto de criar uma zona própria para cada interface de rede. No restante desse artigo vou levar em conta que você também o fez:
 
 <figure>
-  <a href="https://i.imgur.com/g5eWkMg.png">
-    <img src="https://i.imgur.com/g5eWkMg.png" alt="Configurações de firewall">
+  <a href="g5eWkMg.png">
+    <img src="g5eWkMg.png" alt="Configurações de firewall">
   </a>
   <figcaption>Zona de Firewall.</figcaption>
 </figure>
@@ -81,8 +87,8 @@ Vá na aba de `Configurações do Firewall` e atribua uma zona de Firewall para 
 Na aba `Pares` clique em `Adicionar parceiro`:
 
 <figure>
-  <a href="https://i.imgur.com/mLwSKjP.png">
-    <img src="https://i.imgur.com/mLwSKjP.png" alt="Adicionar parceiro">
+  <a href="mLwSKjP.png">
+    <img src="mLwSKjP.png" alt="Adicionar parceiro">
   </a>
   <figcaption>Adicionar parceiro.</figcaption>
 </figure>
@@ -94,8 +100,8 @@ Adicone quantos parceiros você desejar. **Sempre que for para autorizar um novo
 **Dica:** *Sempre que adicionar novos parceiros deve-se reinicar a interface do WireGuard clicando no botão `Reiniciar` na tela de interfaces.*
 
 <figure>
-  <a href="https://i.imgur.com/xNyfuM3.png">
-    <img src="https://i.imgur.com/xNyfuM3.png" alt="Adiconar parceiro 2">
+  <a href="xNyfuM3.png">
+    <img src="xNyfuM3.png" alt="Adiconar parceiro 2">
   </a>
   <figcaption>Adicionar parceiro 2</figcaption>
 </figure>
@@ -111,15 +117,15 @@ Feito isso já somos capazes de conectar na VPN pela rede local mas somente tere
 Agora vamos liberar o acesso da rede VPN WireGuard para as outras redes. Vá em `Rede >> Firewall`. Vamos configurar as `Zonas de Firewall` para que permita `Encaminhar` pacotes da rede da `VPN` (`saron` nas imagens) para a zona da rede `lan` e vice versa, se assim você desejar. Habilite o encaminhamento para a zona da rede `wan` se você desejar que a VPN seja rota padrão do cliente e que ele "navegue" pela internet (utiliza-se muito o termo "sair pela rede") deste OpenWrt. Habilite o encaminhamento para todas as redes que você desejar. Ative também o `Mascaramento` na zona da interface da VPN.
 
 <figure>
-  <a href="https://i.imgur.com/W34QGo0.png">
-    <img src="https://i.imgur.com/W34QGo0.png" alt="Zonas de Firewall">
+  <a href="W34QGo0.png">
+    <img src="W34QGo0.png" alt="Zonas de Firewall">
   </a>
   <figcaption>Zonas de Firewall.</figcaption>
 </figure>
 
 <figure>
-  <a href="https://i.imgur.com/AUXrvXb.png">
-    <img src="https://i.imgur.com/AUXrvXb.png" alt="Zonas de firewall">
+  <a href="AUXrvXb.png">
+    <img src="AUXrvXb.png" alt="Zonas de firewall">
   </a>
   <figcaption>Zonas de Firewall.</figcaption>
 </figure>
@@ -133,8 +139,8 @@ Agora, quando nos conectarmos a VPN seremos capazes de "enxergar" as outras rede
 Na aba `Regras de Tráfego` devemos liberar a entrada de conexões para o dispositivo na porta configurada na interface `wan`.
 
 <figure>
-  <a href="https://i.imgur.com/MAdzQEd.png">
-    <img src="https://i.imgur.com/MAdzQEd.png" alt="Firewall wan">
+  <a href="MAdzQEd.png">
+    <img src="MAdzQEd.png" alt="Firewall wan">
   </a>
   <figcaption>Firewall wan.</figcaption>
 </figure>
@@ -142,8 +148,8 @@ Na aba `Regras de Tráfego` devemos liberar a entrada de conexões para o dispos
 Clique em `Adicionar` para adicionar uma nova regra de tráfego. Na tela que surgir dê um `Nome` para a regra, Selecione o `Protocolo` `UDP` (WireGuard roda no protocolo UDP!?), na `Zona de origem` escolha a zona da interface `wan`, na `Zona de destino` escolha `Dispositivo (entrada)`, em `Porta de destino` coloque a porta configurada no servidor OpenWrt (mesma tela onde utilizamos a chave privada do servidor).
 
 <figure>
-  <a href="https://i.imgur.com/7B8GIkN.png">
-    <img src="https://i.imgur.com/7B8GIkN.png" alt="Entrada de Firewall">
+  <a href="7B8GIkN.png">
+    <img src="7B8GIkN.png" alt="Entrada de Firewall">
   </a>
   <figcaption>Entrada de Firewall.</figcaption>
 </figure>
@@ -155,8 +161,8 @@ Aplique as mudanças clicando em `Salvar & Aplicar`.
 Em `Condição Geral >> Condição geral do WireGuard` você deverá ver uma tela como a abaixo onde aparece a chave pública do seu servidor e dos parceiros conectados. Nesta tela você sempre pode verificar quais os parceiros estão conectados no momento.
 
 <figure>
-  <a href="https://i.imgur.com/0ckyU6g.png">
-    <img src="https://i.imgur.com/0ckyU6g.png" alt="Condição geral do WireGuard">
+  <a href="0ckyU6g.png">
+    <img src="0ckyU6g.png" alt="Condição geral do WireGuard">
   </a>
   <figcaption>Condição geral do WireGuard.</figcaption>
 </figure>
@@ -172,8 +178,8 @@ Ao criar uma nova interface no [NetworkManager](https://wiki.archlinux.org/index
 Darei um `Nome` a interface, em `Addresses` colocarei o endereço de IP autorizado e em `Listen Port` a porta (ambos configurados na configuração do parceiro no OpenWrt), em `Private Key` colocaremos a chave privada do parceiro (client-1-privatekey.txt), em `DNS servers` utilizaremos o endereço de IP configurado na interface do OpenWrt (192.168.3.1) para que o dispositivo possa ser capaz de usar a rede do OpenWrt como rota padrão e "saia" por ela para a internet.
 
 <figure>
-  <a href="https://i.imgur.com/etsL8Wh.png">
-    <img src="https://i.imgur.com/etsL8Wh.png" alt="NetworkManager">
+  <a href="etsL8Wh.png">
+    <img src="etsL8Wh.png" alt="NetworkManager">
   </a>
   <figcaption>Tela do NetworkManager.</figcaption>
 </figure>
@@ -181,8 +187,8 @@ Darei um `Nome` a interface, em `Addresses` colocarei o endereço de IP autoriza
 Se no dispositivo que você está configurando tiver a opção de adicionar um parceiro, clique e vamos adicionar o OpenWrt como parceiro deste dispositivo. Em `Publick Key` colocaremos a chave pública do OpenWrt (serv-publickey.txt), em Allowed IPs colocaremos `0.0.0.0/0`, em `Endpoint` colocaremos o **endereço de IP válido** do servidor (interface `wan` do OpenWrt) e a porta que configuramos e liberamos no Firewall na sintaxe `IP:PORTA`.
 
 <figure>
-  <a href="https://i.imgur.com/ntJ3Hhb.png">
-    <img src="https://i.imgur.com/ntJ3Hhb.png" alt="Tela de Parceiros">
+  <a href="ntJ3Hhb.png">
+    <img src="ntJ3Hhb.png" alt="Tela de Parceiros">
   </a>
   <figcaption>Tela de parceiros.</figcaption>
 </figure>
@@ -190,8 +196,8 @@ Se no dispositivo que você está configurando tiver a opção de adicionar um p
 Pronto. Já devemos ser capazes de conectar e navegar pela VPN. Você pode conferir a conexão na tela de `Condição geral do WireGuard`.
 
 <figure>
-  <a href="https://i.imgur.com/i6IliFr.png">
-    <img src="https://i.imgur.com/i6IliFr.png" alt="Condição geral do WireGuard">
+  <a href="i6IliFr.png">
+    <img src="i6IliFr.png" alt="Condição geral do WireGuard">
   </a>
   <figcaption>Condição geral do WireGuard.</figcaption>
 </figure>
@@ -213,8 +219,8 @@ Você deve alterar a opção Allowed IPs que está em `0.0.0.0/0` e colocar as r
 Você também deverá configurar manualmente rota para as redes que não sejam a da conexão VPN (no meu caso ai, `192.168.1.0/24`). No `NetworkManager` isso se faz na mesma janela de configuração da VPN na aba `IPv4`.
 
 <figure>
-  <a href="https://i.imgur.com/Y0YnBHu.png">
-    <img src="https://i.imgur.com/Y0YnBHu.png" alt="NetworkManager">
+  <a href="Y0YnBHu.png">
+    <img src="Y0YnBHu.png" alt="NetworkManager">
   </a>
   <figcaption>Tela do NetworkManager.</figcaption>
 </figure>
@@ -222,15 +228,15 @@ Você também deverá configurar manualmente rota para as redes que não sejam a
 No aplicativo cliente para celulares [Android](https://play.google.com/store/apps/details?id=com.wireguard.android){:target="blank"}, na tela de edição da conexão, clique em `ALL APPLICATIONS`, na tela que surgir clique na aba `INCLUDE ONLY` e selecione somente os aplicativos que deverão sair pela VPN.
 
 <figure>
-  <a href="https://i.imgur.com/ZVA6uOr.png">
-    <img src="https://i.imgur.com/ZVA6uOr.png" alt="Aplicativo celulare">
+  <a href="ZVA6uOr.png">
+    <img src="ZVA6uOr.png" alt="Aplicativo celulare">
   </a>
   <figcaption>Aplicativo celular.</figcaption>
 </figure>
 
 <figure>
-  <a href="https://i.imgur.com/4YcmrjY.png">
-    <img src="https://i.imgur.com/4YcmrjY.png" alt="Aplicativo celular">
+  <a href="4YcmrjY.png">
+    <img src="4YcmrjY.png" alt="Aplicativo celular">
   </a>
   <figcaption>Aplicativo celular.</figcaption>
 </figure>
