@@ -24,12 +24,6 @@ Para instalar o WireGuard no OpenWrt vamos utilizar o pacote `luci-i18n-wireguar
   </a>
   <figcaption>Pacotes a serem instalados.</figcaption>
 </figure>
-<figure>
-  <a href="GpO7Q4J.png">
-    <img src="GpO7Q4J.png" alt="Pacotes instalados WireGuard">
-  </a>
-  <figcaption>Pacotes a serem instalados.</figcaption>
-</figure>
 
 Após feita a instalação reinicie o roteador para que as alterações de pacotes entrem em vigor pois quando se instala um pacote `lucil-proto-*` ele só irá aparecer se reinicar (se alguém souber de outra forma me avise que eu modifico).
 
