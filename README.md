@@ -13,5 +13,5 @@ Apenas um [cara comum](https://www.instagram.com/marieldejesus12/) que gosta de 
  - [GitLab](https://gitlab.com/marieldejesus12)
  - [Youtube](https://www.youtube.com/marieldejesus12)
 
- Desenvolvido com [Arch Linux](https://www.archlinux.org/), [GitLab Pages](https://pages.gitlab.com/), [Imgur](https://imgur.com), [Disqus](https://disqus.com/), [Jekyll](https://jekyllrb.com/), [Klisé Theme](https://github.com/piharpi/jekyll-klise) e [Atom](https://atom.io/)
+ Desenvolvido com [Arch Linux](https://www.archlinux.org/), [Atom](https://atom.io/), [Jekyll](https://jekyllrb.com/), [GitLab Pages](https://pages.gitlab.com/), [Imgur](https://imgur.com), [Disqus](https://disqus.com/), [Crisp](https://crisp.chat/pt/) e [Klisé Theme](https://github.com/piharpi/jekyll-klise) 
  <br>Encontrou um erro ou quer dar uma sugestão? Abra uma [issue](https://gitlab.com/marieldejesus12/marieldejesus12.gitlab.io/-/issues/new)!</br>
