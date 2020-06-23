@@ -8,6 +8,6 @@ tags: Teste
 description: Post de teste para testar funcionalidades
 ---
 
-<a href="https://telegram.me/share/url?url=marieldejesus12.github.io" data-action="share/whatsapp/share" onClick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on whatsapp"></a>
+{{ page.last_modified_at }}
 
-https://telegram.me/share/url?url=
+{% last_modified_at %d-%m-%Y às %T %}

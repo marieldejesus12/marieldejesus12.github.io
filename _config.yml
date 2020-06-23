@@ -5,7 +5,7 @@ description: >-
 lang: pt-BR
 timezone: America/Belem
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: 
+repo:
 mode: dark # default theme "dark" | "light"
 
 
@@ -94,3 +94,4 @@ plugins:
   - jekyll-compose
   - rouge
   - jekyll-seo-tag
+  - jekyll-last-modified-at

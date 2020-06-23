@@ -1,7 +1,7 @@
 ---
 title: "Script de pós instalação do OpenWRT"
 date: "2020-06-22 19:09:50 -0300"
-modified:
+modified: 
 layout: post
 published: true
 tags: OpenWRT, Script, Ferramentas
