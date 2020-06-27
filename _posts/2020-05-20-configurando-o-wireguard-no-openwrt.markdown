@@ -1,10 +1,10 @@
 ---
 title: Configurando o Wireguard VPN no OpenWrt com Luci
 date: "2020-05-21 09:23:26 -0300"
-modified: 
+modified:
 layout: post
 published: true
-tags: OpenWRT, WireGuard, VPN
+tags: OpenWRT WireGuard VPN
 description: Veja como configurar o Wireguard VPN no OpenWrt.
 ---
 
