@@ -20,7 +20,6 @@ author:
 
 # Url settings
 url: "https://marieldejesus12.gitlab.io"
-baseurl:
 permalink: /:title/
 fb_appid:
 
