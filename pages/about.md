@@ -14,7 +14,7 @@ Apenas um [cara comum](https://www.instagram.com/marieldejesus12/){:target="blan
  - [Instagram](https://www.instagram.com/marieldejesus12){:target="blank"}
  - [Twitter](https://twitter.com/marieldejesus12){:target="blank"}
  - [LinkedIn](https://www.linkedin.com/in/marieldejesus12){:target="blank"}
- - [GitLab](https://gitlab.com/marieldejesus12){:target="blank"}
+ - [GitHub](https://github.com/marieldejesus12){:target="blank"}
  - [Youtube](https://www.youtube.com/marieldejesus12){:target="blank"}
 
 <!-- <script>
