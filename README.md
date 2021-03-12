@@ -1,7 +1,5 @@
 ## Site pessoal de Mariel de Jesus™
 
-[![pipeline status](https://gitlab.com/marieldejesus12/marieldejesus12.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/marieldejesus12/marieldejesus12.gitlab.io/-/commits/master)
-
 Apenas um [cara comum](https://www.instagram.com/marieldejesus12/) que gosta de tecnologia e de inventar coisas. Pai de [duas filhas](https://www.facebook.com/photo?fbid=2993608304024304&set=a.313803925338102) muito lindas e marido de uma [mulher maravilhosa](https://www.instagram.com/ildenerramos12/).
 
  - [Telegram](https://t.me/marieldejesus12)
