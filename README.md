@@ -2,7 +2,7 @@
 
 Apenas um [cara comum](https://www.instagram.com/marieldejesus12/) que gosta de tecnologia e de inventar coisas. Pai de [duas filhas](https://www.facebook.com/photo?fbid=2993608304024304&set=a.313803925338102) muito lindas e marido de uma [mulher maravilhosa](https://www.instagram.com/ildenerramos12/).
 
- - [Telegram](https://t.me/marieldejesus12){:target="blank"}
+ - [Telegram](https://t.me/marieldejesus12)
  - [Gmail](mailto:marieldejesus12@gmail.com)
  - [Facebook](https://www.facebook.com/marieldejesus12/)
  - [Instagram](https://www.instagram.com/marieldejesus12)
