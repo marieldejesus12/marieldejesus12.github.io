@@ -55,11 +55,10 @@ layout: compress
           {% endif %}
         </div>
       </article>
-      <!-- {% if page.modified %}
-        <small class="post-updated-at">Modificado em {{page.modified | date: "%d-%m-%Y"}}</small>
-      {% endif %} -->
       <p></p>
-      <small class="post-updated-at">Última modificação em {% last_modified_at %d-%m-%Y às %T %}</small>
+      {% if page.modified %}
+        <small class="post-updated-at">Modificado em {{page.modified | date: "%d-%m-%Y"}}</small>
+      {% endif %}
       <p></p>
       <p></p>
       {% if page.comments %}
